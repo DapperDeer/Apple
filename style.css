@@ -1,18 +1,38 @@
 #root {
-	max-width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 75%;
+}
+
+.centered {
+	display: block;
 	margin: 0 auto;
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+
+html, body, #root {
+	margin:0 auto;
+}
+
+ul {
+	list-style-type: none;
 }
 
 .card {
-	margin: 1rem;
-	border: 1px solid gray;
+	box-sizing:border-box;
+	flex-basis:30%;
+	text-align:center;
+	border:1px solid gray;
+	margin: .1rem;
 }
 
+/*
 @media screen and (min-width:600px) {
 	.card {
 		flex: 1 1 calc(50% - 2rem);
@@ -24,3 +44,4 @@
 		flex: 1 1 calc(33% - 2rem):
 	}
 }
+*/
